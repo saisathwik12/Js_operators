@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>For Output Open console</h2>
+
+    <script>
+        //operators
+
+        //1.qns
+
+        //arithmetic operators
+
+        var a=10;
+        var b=20;
+        console.log(a+b);
+        console.log(a-b);
+        console.log(a*b);
+        console.log(a/b);
+
+        //comparison operators
+        console.log(a > b);
+        console.log(a < b);
+        console.log(a == b);
+        console.log(a === b);
+
+        //assignment operator
+        console.log(a += b);
+        console.log(a -= b);
+        console.log(a *= b);
+        console.log(a /= b);
+        console.log(a >= b);
+        console.log(a <= b);
+
+
+        //2.qns
+
+        var first_name = prompt("Enter your first name : ");
+        var last_name = prompt("Enter your last name : ");
+        var age = prompt("Enter Age : ");
+
+        console.log("Full Name : ",first_name+" "+last_name);
+
+        let c = (age >=18)? "Eligible for vote" : "Not Eligible for vote";
+        console.log(c);
+
+        var full_name = first_name +  " " + last_name;
+        (full_name.length>10)? console.log("greater than 10") : console.log("less than 10");
+
+
+        //3.qns
+
+        let number = prompt("Enter a number :");
+
+        console.log(number % 2);
+        console.log(number % 2);
+
+        //(number <= 50)? console.log("Less than or equal to 50") : console.log("Greater than 50");
+        console.log("number > 50:",number >50);
+        console.log("number < 50:",number <50);
+        console.log("number == 50:",number == 50);
+
+
+        (number % 2 == 0)? console.log("Even") : console.log("Odd");
+
+
+
+        //4.qns
+
+        let n1 = prompt("Enter 1st number :");
+        let n2 = prompt("Enter 2nd number :");
+        let n3 = prompt("Enter 3rd number :");
+
+        console.log(n1 +n2);
+
+        let sum= n1+n2;
+        console.log(sum > n3);
+        console.log(sum < n3);
+        
+        console.log(sum > 50 && n3 < 100);
+
+        //5.qns
+        var first_name = prompt("Enter your first name : ");
+        var last_name = prompt("Enter your last name : ");
+        var num = prompt("Enter number : ");
+        var full_name = first_name+ " "+last_name;
+
+        console.log("Full Name : ",full_name);
+
+        console.log(typeof(num));
+
+        console.log("Incremented number : ",num += 10);
+
+        //6.qns
+
+        let amount = prompt("Enter the amount : ");
+        let dis =15/100 * amount;
+        (amount >=150)? console.log("15% discount applied : ",+amount +dis):
+        console.log("No discount available");
+
+        //7.qns
+
+        var str1= prompt("Enter the string :")
+        var b =str1.split('').reverse().join('')
+        console.log(b)
+
+        console("greater then 15",b > 15);
+        console.log(str1 >20 || b > 20);
+        
+        //8.qns
+
+        let num1 = prompt("Enter first number: ");
+        let num2 = prompt("Enter second number: ");
+
+        console.log(num1 & num2);
+        console.log(num1 | num2);
+        console.log(num1 ^ num2);
+
+        let leftshift = num1 << 2;
+
+        console.log("left shift: ",leftshift);
+        console.log(num1 == leftshift);
+
+        //9.qns
+
+        var age = prompt("enter age : ");
+        var salary = prompt("Enter salary: ")
+        var score = prompt("Enter the credit score: ");
+
+        ((age >=21 && salary >30000) || score >650)? console.log("personal loan approved") : console.log("personal loan denied");
+
+        //10.qns
+
+        var marks = parseInt(prompt("Enter the score: "));
+        (marks < 60)? marks += 5 : marks;
+        (marks >= 60)? console.log("Passed"): console.log("Failed");
+
+
+    </script>
+</body>
+</html>
